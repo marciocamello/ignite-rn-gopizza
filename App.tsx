@@ -28,6 +28,10 @@ import {
     Signin
 } from '@screens/Signin';
 
+import {
+    Product
+} from '@screens/Product';
+
 export default function App() {
 
     const [fontsLoaded] = useFonts({
@@ -44,7 +48,7 @@ export default function App() {
             <StatusBar style="light" translucent backgroundColor='transparent' />
 
             <AuthProvider>
-                <Signin />
+                <Product />
             </AuthProvider>
         </ThemeProvider>
     );
